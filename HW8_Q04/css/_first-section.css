@@ -1,0 +1,27 @@
+.first-div {
+  background-color: var(--color-thirty);
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.first-div-top {
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.first-div-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.first-paragraph {
+  width: 35rem;
+  text-align: center;
+}

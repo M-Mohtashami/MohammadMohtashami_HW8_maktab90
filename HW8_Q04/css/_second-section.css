@@ -1,0 +1,29 @@
+.Aydin-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  /* gap: 0.5rem; */
+  padding: 2rem;
+}
+.same-set {
+  width: 17rem;
+  height: auto;
+  background-color: white;
+  /* margin: 2rem 3rem 2rem 2rem; */
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.same-set h3 {
+  margin: 1rem;
+}
+.same-set,
+p {
+  margin: 1rem;
+}
+.color-black{
+  color: black;
+}
