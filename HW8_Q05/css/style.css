@@ -44,3 +44,14 @@ body {
 .main .tall {
   grid-row-end: span 2;
 }
+
+@media screen and (max-width: 1020px) {
+  .main {
+    grid-auto-rows: 120px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .main {
+    grid-auto-rows: 110px;
+  }
+}
