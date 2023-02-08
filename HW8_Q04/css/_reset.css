@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #333333;
+  --color-text: #515151d7;
+  --color-secondry: #eee;
+  --color-grey: #cccccc;
+  --color-blue: #2690d4;
+  --color-link: #1b6ea3;
+}
+@font-face {
+  font-family: "sofiasans";
+  src: url(/font/SofiaSans-Medium.ttf);
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "sofiasans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

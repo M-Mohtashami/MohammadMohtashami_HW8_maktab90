@@ -1,0 +1,23 @@
+.third-div {
+  display: flex;
+  background-color: var(--color-secondry);
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+}
+.third-div-top {
+  font-weight: 800;
+}
+.third-bottom {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 45rem;
+  text-align: center;
+}
