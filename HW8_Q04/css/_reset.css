@@ -1,7 +1,8 @@
 :root {
   --color-primary: #333333;
-  --color-secondry: #ffffff;
-  --color-thirty: #eaeaea;
+  --color-text: #515151d7;
+  --color-secondry: #eee;
+  --color-thirty: #cccccc;
   --color-fourthy: #2690d4;
   --color-link: #1b6ea3;
 }
@@ -19,9 +20,12 @@
 html {
   font-size: 62.5%;
 }
+html,
 body {
-  max-width: 1440px;
-  /* width: 100%; */
+  width: 100%;
+  height: 100%;
+}
+body {
   font-family: "sofiasans";
   display: flex;
   align-items: center;

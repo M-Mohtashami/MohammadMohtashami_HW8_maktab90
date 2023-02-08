@@ -1,0 +1,137 @@
+@import url(./_reset.css);
+@import url(./_first-section.css);
+@import url(./_second-section.css);
+@import url(./_third-section.css);
+@import url(./_footer.css);
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 250px 600px 250px; */
+}
+.header {
+  width: 100%;
+  height: 25%;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 100%;
+  gap: 1.5rem;
+}
+.header h1,
+p,
+button {
+  color: var(--color-secondry);
+  text-align: center;
+}
+.header p {
+  font-size: 1.6rem;
+}
+.button {
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-secondry);
+  border-radius: 3px;
+}
+.button:hover {
+  background-color: var(--color-secondry);
+  color: var(--color-primary);
+}
+
+.main {
+  height: 65%;
+}
+
+@media all and (max-width: 375px) {
+  .main {
+    width: 100%;
+  }
+  .headerContainer {
+    width: 35rem;
+  }
+  .first-div-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Aydin-main {
+    flex-direction: column;
+  }
+  .third-bottom {
+    width: 32rem;
+  }
+  .footer-body {
+    flex-direction: column-reverse;
+  }
+  .footer-body p {
+    width: 32rem;
+    align-self: center;
+    font-size: 1.4rem;
+  }
+  .item-left,
+  .item-right {
+    width: 100%;
+    gap: 1rem;
+  }
+  .item-bottom {
+    justify-content: center;
+    gap: 8rem;
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 280px) {
+  .header {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .main {
+    width: 100%;
+  }
+  .headerContainer h1,
+  p {
+    width: 25rem;
+  }
+  .first-div-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-paragraph {
+    width: 25rem;
+  }
+  .Aydin-main {
+    flex-direction: column;
+  }
+  .third-bottom {
+    width: 25rem;
+  }
+  .footer-body {
+    flex-direction: column-reverse;
+  }
+  .footer-body p {
+    width: 25rem;
+    align-self: center;
+    font-size: 1.4rem;
+  }
+  .item-left,
+  .item-right {
+    width: 100%;
+    gap: 1rem;
+  }
+  .item-bottom {
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.2rem;
+  }
+}
