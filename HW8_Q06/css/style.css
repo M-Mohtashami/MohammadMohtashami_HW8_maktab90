@@ -31,8 +31,8 @@ body {
   align-items: center;
   /* justify-content: center; */
   gap: 5rem;
-  /* margin-top: 8rem;
-  margin-bottom: 8rem; */
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .circle {
   width: 15rem;
