@@ -1,0 +1,121 @@
+:root {
+  --blue-color: #0984e2;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 5rem;
+  /* margin-top: 8rem;
+  margin-bottom: 8rem; */
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--blue-color);
+  border-radius: 100%;
+  position: fixed;
+}
+.top {
+  top: -7.5rem;
+  right: -7.5rem;
+  z-index: 1;
+}
+.bottom {
+  bottom: -7.5rem;
+  left: -7.5rem;
+}
+.card {
+  width: 15rem;
+  text-align: center;
+  border: 1px solid rgba(234, 234, 234, 0.158);
+  border-radius: 5px;
+  box-shadow: 0 0 1rem 0.01rem rgba(204, 204, 204, 0.442);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card p {
+  color: rgb(145, 145, 145);
+}
+.title {
+  margin-bottom: 1rem;
+}
+.icon {
+  padding: 2rem;
+}
+.number {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border: 1px solid rgba(204, 204, 204, 0.391);
+  border-radius: 100%;
+  position: absolute;
+  top: -1.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-icon {
+  fill: var(--blue-color);
+}
+
+@media all and (max-width: 330px) {
+  .card {
+    width: 15rem;
+  }
+}
+@media all and (min-width: 500px) {
+  .card {
+    gap: 1rem;
+    width: 15rem;
+    padding-bottom: 3rem;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+}
+@media all and (min-width: 600px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .card {
+    width: 15rem;
+  }
+  .whit-space::before {
+    content: "";
+  }
+}
