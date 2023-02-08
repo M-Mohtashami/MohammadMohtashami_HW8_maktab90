@@ -9,28 +9,25 @@
   width: 100%;
   height: 100%;
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, min); */
-  grid-template-rows: 23.25% 53.5% 23.25%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
 }
 
 .header {
+  grid-column-end: span 2;
   background-color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  text-align: center;
   font-size: 1.6rem;
 }
 .header h1,
 p,
 .button {
   color: var(--color-secondry);
-  text-align: center;
+  margin-top: 2rem;
 }
-.header p {
+/* .header p {
   width: 40%;
-}
+} */
 
 .button {
   width: 10rem;
