@@ -10,6 +10,9 @@
 .color-light {
   color: var(--color-secondry);
 }
+.color-grey {
+  color: var(--color-grey);
+}
 .color-text-dark {
   color: var(--color-text);
 }

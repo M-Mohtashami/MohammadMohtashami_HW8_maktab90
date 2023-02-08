@@ -27,14 +27,11 @@
   flex-wrap: wrap;
   padding: 4rem 10rem;
 }
-.header h1,
+/* .header h1,
 p,
 .button {
   color: var(--color-secondry);
   margin-top: 2rem;
-}
-/* .header p {
-  width: 40%;
 } */
 
 .button {
@@ -48,7 +45,6 @@ p,
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   text-align: center;
 }
 .card-section {
