@@ -1,9 +1,5 @@
 @import url("_reset.css");
 @import url("_utils.css");
-/* @import url("_first-section.css");
-@import url("_second-section.css");
-@import url("_third-section.css");
-@import url("_footer.css"); */
 
 .container {
   max-width: 1440px;
@@ -22,17 +18,12 @@
 }
 .flex-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 4rem 10rem;
+  gap: 2rem;
+  padding: 4rem 25rem;
 }
-/* .header h1,
-p,
-.button {
-  color: var(--color-secondry);
-  margin-top: 2rem;
-} */
 
 .button {
   width: 10rem;
@@ -44,6 +35,7 @@ p,
 .two-column {
   width: 100%;
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
 }
@@ -82,9 +74,18 @@ p,
   padding: 1rem 0;
 }
 
+@media screen and (max-width: 950px) {
+  .flex-section {
+    padding: 4rem 10rem;
+  }
+  .two-column {
+    gap: 4rem;
+  }
+}
 @media screen and (max-width: 650px) {
   .two-column {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 @media screen and (max-width: 500px) {
